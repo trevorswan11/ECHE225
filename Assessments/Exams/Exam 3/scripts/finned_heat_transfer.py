@@ -1,4 +1,5 @@
-from math import cosh, tanh, sqrt, exp
+from math import cosh, tanh, sqrt, exp, pi
+import unit_conversion as uc
 
 def calculate_m_parameter(h: float, P: float, k: float, A_c: float) -> float:
     return sqrt((h * P) / (k * A_c))
@@ -35,7 +36,7 @@ def calculate_Q_infinite(h: float,
                      A_c: float, 
                      T_b: float, 
                      T_inf: float) -> float:
-    square_root: float = sqrt(h * P * k, A_c)
+    square_root: float = sqrt(h * P * k * A_c)
     T_diff: float = T_b - T_inf
     return square_root * T_diff
 
@@ -52,4 +53,15 @@ def calculate_Q_adiabatic(h: float,
     hyperbolic = tanh(m * L)
     return square_root * T_diff * hyperbolic
 
+def question_():
+    print()
+    
+def question_():
+    print()
 
+def main():
+    m = calculate_m_parameter(15, pi * 0.01, 237, pi * ((0.01 / 2) ** 2))
+    print(m, 1- tanh(m * 0.5))
+    print('hello')
+
+if __name__ == '__main__': main()

@@ -1,4 +1,5 @@
-from math import exp
+from math import exp, pi, log
+import unit_conversion as uc
 
 def calculate_Biot_number(h: float, L_c: float, k: float) -> float:
     return (h * L_c) / k
@@ -51,4 +52,15 @@ def calculate_Q_max(m: float, C_p: float, T_inf: float, T_i: float) -> float:
     T_diff: float = T_inf - T_i
     return m * C_p * T_diff
 
+def question_():
+    print()
+    
+def question_():
+    print()
 
+def main():
+    b = calculate_b_parameter(75, 0.000314, 8000, 5.24e-7, 500)
+    print(b, - (1/b) * log((100 -35) / (900 - 35)))
+    print('hello')
+
+if __name__ == '__main__': main()

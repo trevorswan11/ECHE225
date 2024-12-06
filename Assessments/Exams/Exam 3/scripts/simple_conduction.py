@@ -1,5 +1,6 @@
 from typing import List
-from math import log, exp, pi
+from math import log, pi
+import unit_conversion as uc
 
 def conductive_resistance(L: float, k: float, A_c: float) -> float:
     return L / (k * A_c)
@@ -34,3 +35,14 @@ def calculate_Q_convection(T_1: float, T_2: float, R_convection: float) -> float
 
 def calculate_Q_series(T_first: float, T_last: float, R_total: float) -> float:
     return (T_first - T_last) / R_total 
+
+def question_():
+    print()
+    
+def question_():
+    print()
+
+def main():
+    print('hello')
+
+if __name__ == '__main__': main()
