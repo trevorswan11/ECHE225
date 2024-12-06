@@ -1,4 +1,4 @@
-
+# This is the solution to quiz 12, as my work was wrong
 def Nussult(Re, Pr, correlation: str, mixed_BL: bool = True):
     Re_crit = 5 * (10 ** 5)
     # Laminar BL
